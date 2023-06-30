@@ -1,8 +1,6 @@
 package task3;
 
-import org.junit.Test;
-import org.junit.Before;
-import org.junit.After;
+import org.junit.*;
 
 import static org.junit.Assert.*;
 
@@ -19,7 +17,7 @@ public class UseJunit {
         driver.get("https://www.facebook.com/");
     }
 
-    @Test
+    @Test(timeout = 15000)
     public void Check_title() {
         assertEquals("Facebook - log in or sign up", driver.getTitle());
     }
@@ -36,10 +34,17 @@ public class UseJunit {
         driver.findElement(By.cssSelector("button[type='submit']")).click();
     }
 
+    //Example of using @Ignore.
+//    @Ignore("In development.")
     @Test
     public void Createpage() {
         driver.findElement(By.className("_8esh")).click();
         assertEquals("Facebook", driver.getTitle());
+    }
+
+    @AfterClass
+    public static void Message() {
+        System.out.println("Testing is completed.");
     }
 
     @After
