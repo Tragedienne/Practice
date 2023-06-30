@@ -9,9 +9,8 @@ public class Btn_click {
     public static void main(String[] args) {
 
         WebDriver driver = new FirefoxDriver();
-        String appUrl = "https://games.logicplays.com/red-button/";
 
-        driver.get(appUrl);
+        driver.get("https://games.logicplays.com/red-button/");
 
         driver.manage().window().maximize();
 
