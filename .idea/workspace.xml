@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="bf6d9667-61b6-438f-97fc-770a3aaef125" name="Changes" comment="some changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/task3/Use_junit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task3/Use_junit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Practice.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/task3/Use_junit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task3/UseJunit.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +38,7 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/IntelliJ IDEA Community Edition 2022.1.1/lib/junit4.jar",
+    "last_opened_file_path": "D:/IntelliJ IDEA Community Edition 2022.1.1/lib/junit.jar",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
@@ -49,7 +50,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.Use_junit">
+  <component name="RunManager" selected="JUnit.UseJunit">
     <configuration name="Btn_click" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="task2.Btn_click" />
       <module name="Practice" />
@@ -76,6 +77,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UseJunit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="task3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="task3" />
+      <option name="MAIN_CLASS_NAME" value="task3.UseJunit" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UseJunit.Check_url" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="task3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="task3" />
+      <option name="MAIN_CLASS_NAME" value="task3.UseJunit" />
+      <option name="METHOD_NAME" value="Check_url" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Use_junit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practice" />
       <extension name="coverage">
@@ -93,6 +125,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UseJunit" />
+        <item itemvalue="JUnit.UseJunit.Check_url" />
         <item itemvalue="JUnit.Use_junit" />
         <item itemvalue="Application.Btn_click" />
         <item itemvalue="Application.task2.Btn" />
@@ -122,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688147895662</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="some changes">
+      <created>1688159854048</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1688159854048</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

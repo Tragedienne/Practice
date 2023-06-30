@@ -8,34 +8,40 @@ import static org.junit.Assert.*;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class Use_junit {
+public class UseJunit {
     private WebDriver driver;
 
     @Before
     public void Obj() {
         driver = new FirefoxDriver();
+        driver.get("https://www.facebook.com/");
     }
+
     @Test
     public void Check_title() {
-        driver.get("https://www.facebook.com/");
         assertEquals("Facebook - log in or sign up", driver.getTitle());
     }
+
     @Test
     public void Check_url() {
-        driver.get("https://www.facebook.com/");
-        assertEquals("https://www.facebook.com/", driver.getCurrentUrl());
+        assertTrue("Url is incorrect.", "https://www.facebook.com/".equals(driver.getCurrentUrl()));
     }
+
     @Test
-    public void Btn_click() {
-        driver.get("https://www.facebook.com/");
+    public void Login() {
         driver.findElement(By.id("email")).sendKeys("test_login");
         driver.findElement(By.xpath("//*[@id=\"pass\"]")).sendKeys("test_pass");
-        driver.findElement(By.className("login")).click();
-        //assertEquals("Войдите на Facebook", driver.getTitle());
+        driver.findElement(By.cssSelector("button[type='submit']")).click();
     }
+
+    @Test
+    public void Createpage() {
+        driver.findElement(By.className("_8esh")).click();
+        assertEquals("Facebook", driver.getTitle());
+    }
+
     @After
     public void Close() {
         driver.close();
