@@ -1,37 +1,35 @@
 package task4;
 
+import org.junit.After;
+import org.junit.Before;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class testng {
-    public WebDriver driver = new FirefoxDriver();
+    private WebDriver driver = new FirefoxDriver();
+
+    @Before
+    public void Obj() {
+        driver.get("https://www.facebook.com/");
+        driver.manage().window().maximize();
+    }
 
     @Test
-    public void gmailLogin() {
-        // launch the firefox browser and open the application url
-        driver.get("https://ru-ru.facebook.com/");
+    public void link() throws InterruptedException{
+        driver.findElement(By.linkText("Забыли пароль?")).click();
+        driver.navigate().back();
+        Thread.sleep(5000);
+    }
 
-        driver.manage().window().maximize();
-
-// fetch the title of the web page and save it into a string variable
-//        String actualTitle = driver.getTitle();
-//        Assert.assertEquals("Facebook - log in or sign up",actualTitle);
-
-        WebElement username = driver.findElement(By.id("email"));
-        username.clear();
-        username.sendKeys("test");
-
-        WebElement password = driver.findElement(By.id("pass"));
-        password.clear();
-        password.sendKeys("test");
-
-        WebElement SignInButton = driver.findElement(By.name("login"));
-        SignInButton.click();
-
-        driver.close();
+//    @AfterSuite
+//    public static void Message() {
+//        System.out.println("Testing is completed.");
+//    }
+//
+    @After
+    public void Close() {
+        driver.quit();
     }
 }
