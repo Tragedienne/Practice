@@ -14,18 +14,6 @@ public class Btn_click {
 
         driver.manage().window().maximize();
 
-        String expectedTitle = "Красная кнопка";
-        String actualTitle = driver.getTitle();
-
-        if (expectedTitle.equals(actualTitle))
-        {
-            System.out.println("Verification Successful.");
-        }
-        else
-        {
-            System.out.println("Verification Failed.");
-        }
-
         WebElement Button = driver.findElement(By.className("button"));
         Button.click();
 
