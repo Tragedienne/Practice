@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf6d9667-61b6-438f-97fc-770a3aaef125" name="Changes" comment="some changes">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/task2/Btn_click.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task2/Btn_click.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/task4/testng.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task4/testng.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,10 +39,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "D:/УНИВЕР/3К2С/ПРАКТИКА ИВА/JARs/slf4j-api-2.0.7.jar",
-    "project.structure.last.edited": "Artifacts",
+    "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "File.Encoding"
+    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings"
   },
   "keyToStringList": {
     "ChangesTree.GroupingKeys": [
@@ -52,7 +51,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Btn_click">
+  <component name="RunManager" selected="TestNG.testng">
     <configuration name="Btn_click" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="task2.Btn_click" />
       <module name="Practice" />
@@ -134,8 +133,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Btn_click" />
         <item itemvalue="TestNG.testng" />
+        <item itemvalue="Application.Btn_click" />
         <item itemvalue="JUnit.UseJunit" />
         <item itemvalue="TestNG.testng.Check_url" />
         <item itemvalue="JUnit.testng" />
@@ -200,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688316419433</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="some changes">
+      <created>1688317808528</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1688317808528</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

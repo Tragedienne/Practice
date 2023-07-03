@@ -12,22 +12,28 @@ public class testng {
 
     @Before
     public void Obj() {
-        driver.get("https://www.facebook.com/");
         driver.manage().window().maximize();
     }
 
+//    @Test
+//    public void link() throws InterruptedException {
+//        driver.get("https://www.hostinger.com/tutorials/how-to-make-a-website");
+//        driver.findElement(By.id("email")).sendKeys("test");
+//    }
+
+    //Переход по линкам
     @Test
-    public void link() throws InterruptedException{
-        driver.findElement(By.linkText("Р—Р°Р±С‹Р»Рё РїР°СЂРѕР»СЊ?")).click();
+    public void l() throws InterruptedException {
+        driver.get("https://stackoverflow.com/");
+        driver.findElement(By.linkText("About")).click();
+        driver.navigate().back();
+        Thread.sleep(1000);
+        driver.findElement(By.linkText("For Teams")).click();
         driver.navigate().back();
         Thread.sleep(5000);
     }
 
-//    @AfterSuite
-//    public static void Message() {
-//        System.out.println("Testing is completed.");
-//    }
-//
+
     @After
     public void Close() {
         driver.quit();
