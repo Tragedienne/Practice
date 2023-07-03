@@ -1,40 +1,38 @@
 package task4;
 
-import org.junit.After;
-import org.junit.Before;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.annotations.*;
 
 public class testng {
     private WebDriver driver = new FirefoxDriver();
 
-    @Before
+    @BeforeSuite
     public void Obj() {
         driver.manage().window().maximize();
     }
 
-//    @Test
-//    public void link() throws InterruptedException {
-//        driver.get("https://www.hostinger.com/tutorials/how-to-make-a-website");
-//        driver.findElement(By.id("email")).sendKeys("test");
-//    }
+    //Проверка актуального заголовка сайта
+    @Test(priority = 1)
+    public void title() {
+        driver.get("https://stackoverflow.com/");
+        Assert.assertEquals("Stack Overflow - Where Developers Learn, Share, & Build Careers", driver.getTitle());
+    }
 
     //Переход по линкам
-    @Test
-    public void l() throws InterruptedException {
+    @Test(priority = 2)
+    public void link() throws InterruptedException {
         driver.get("https://stackoverflow.com/");
         driver.findElement(By.linkText("About")).click();
         driver.navigate().back();
-        Thread.sleep(1000);
         driver.findElement(By.linkText("For Teams")).click();
         driver.navigate().back();
         Thread.sleep(5000);
     }
 
-
-    @After
+    @AfterSuite
     public void Close() {
         driver.quit();
     }
