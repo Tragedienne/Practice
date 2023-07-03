@@ -65,37 +65,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UseJunit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Practice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="task3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="task3" />
-      <option name="MAIN_CLASS_NAME" value="task3.UseJunit" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testng" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Practice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="task4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="task4" />
-      <option name="MAIN_CLASS_NAME" value="task4.testng" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="testng" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Practice" />
       <extension name="coverage">
@@ -113,7 +82,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testng.Check_url" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="testng.btn" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Practice" />
       <extension name="coverage">
         <pattern>
@@ -123,7 +92,43 @@
       </extension>
       <option name="PACKAGE_NAME" value="task4" />
       <option name="MAIN_CLASS_NAME" value="task4.testng" />
-      <option name="METHOD_NAME" value="Check_url" />
+      <option name="METHOD_NAME" value="btn" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testng.selectFunc" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="task4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="task4" />
+      <option name="MAIN_CLASS_NAME" value="task4.testng" />
+      <option name="METHOD_NAME" value="selectFunc" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testng.visibility" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="task4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="task4" />
+      <option name="MAIN_CLASS_NAME" value="task4.testng" />
+      <option name="METHOD_NAME" value="visibility" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -134,10 +139,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.testng" />
+        <item itemvalue="TestNG.testng.visibility" />
+        <item itemvalue="TestNG.testng.btn" />
+        <item itemvalue="TestNG.testng.selectFunc" />
         <item itemvalue="Application.Btn_click" />
-        <item itemvalue="JUnit.UseJunit" />
-        <item itemvalue="TestNG.testng.Check_url" />
-        <item itemvalue="JUnit.testng" />
       </list>
     </recent_temporary>
   </component>
@@ -213,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688398917513</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="some changes">
+      <created>1688414326395</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1688414326395</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
