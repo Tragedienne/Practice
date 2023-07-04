@@ -51,7 +51,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="TestNG.testng.waiting">
+  <component name="RunManager" selected="TestNG.testng.alerts">
     <configuration name="testng" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Practice" />
       <extension name="coverage">
@@ -69,6 +69,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="testng.alerts" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="task4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="task4" />
+      <option name="MAIN_CLASS_NAME" value="task4.testng" />
+      <option name="METHOD_NAME" value="alerts" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="testng.btn" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Practice" />
       <extension name="coverage">
@@ -80,24 +98,6 @@
       <option name="PACKAGE_NAME" value="task4" />
       <option name="MAIN_CLASS_NAME" value="task4.testng" />
       <option name="METHOD_NAME" value="btn" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testng.selectFunc" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Practice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="task4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="task4" />
-      <option name="MAIN_CLASS_NAME" value="task4.testng" />
-      <option name="METHOD_NAME" value="selectFunc" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -143,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.testng.waiting" />
+        <item itemvalue="TestNG.testng.alerts" />
         <item itemvalue="TestNG.testng" />
+        <item itemvalue="TestNG.testng.waiting" />
         <item itemvalue="TestNG.testng.visibility" />
         <item itemvalue="TestNG.testng.btn" />
-        <item itemvalue="TestNG.testng.selectFunc" />
       </list>
     </recent_temporary>
   </component>
@@ -237,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688423637086</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="some changes">
+      <created>1688478667420</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1688478667420</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -1,5 +1,6 @@
 package task4;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -56,7 +57,7 @@ public class testng {
 
     //ќжидание (€вное)
     @Test(priority = 4)
-    public void waiting() throws InterruptedException {
+    public void waiting() {
         driver.findElement(By.xpath("/html/body/header/div/nav/ol/li[3]/a")).click();
         driver.findElement(By.id("email")).sendKeys("sanya.gubanova.02@gmail.com");
         driver.findElement(By.id("password")).sendKeys("alya2002");
@@ -67,6 +68,23 @@ public class testng {
         driver.findElement(By.xpath("/html/body/div[3]/div[2]/div[1]/div[1]/div/a")).click();
 
         driver.navigate().back();
+    }
+
+    @Test(priority = 5)
+    public void alerts() throws InterruptedException{
+        driver.get("https://learn.javascript.ru/uibasic");
+
+        driver.findElement(By.xpath("/html/body/div[1]/div[2]/div/main/div[1]/article/div[2]/div[8]/div/div[1]/div[1]/a")).click();
+        Thread.sleep(5000);
+        driver.switchTo().alert().accept();
+        driver.navigate().back();
+
+        driver.get("https://learn.javascript.ru/uibasic");
+        driver.findElement(By.xpath("/html/body/div[1]/div[2]/div/main/div[1]/article/div[2]/div[8]/div/div[1]/div[1]/a")).click();
+        Thread.sleep(5000);
+        driver.switchTo().alert().dismiss();
+        Thread.sleep(5000);
+
     }
 
     @AfterSuite
