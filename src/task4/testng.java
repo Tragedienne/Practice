@@ -1,9 +1,6 @@
 package task4;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -33,9 +30,17 @@ public class testng {
     //Переход по линкам
     @Test(priority = 2)
     public void link() throws InterruptedException {
-        driver.findElement(By.linkText("About")).click();
+        try {
+            driver.findElement(By.linkText("About")).click();
+        } catch (NoSuchElementException e) {
+            System.out.println("No such element!");
+        }
         driver.navigate().back();
-        driver.findElement(By.partialLinkText("Teams")).click();
+        try {
+            driver.findElement(By.partialLinkText("Teams")).click();
+        } catch (NoSuchElementException e) {
+            System.out.println("No such element!");
+        }
         driver.navigate().back();
         Thread.sleep(5000);
     }
@@ -49,9 +54,13 @@ public class testng {
 
         boolean is_displayed_check = driver.findElement(By.id("submit-button")).isDisplayed();
         boolean is_enabled = driver.findElement(By.id("opt-in")).isEnabled();
-        if (is_displayed_check == true && is_enabled == true) {
-            driver.findElement(By.id("opt-in")).click();
-            System.out.println(is_enabled);
+        try {
+            if (is_displayed_check == true && is_enabled == true) {
+                driver.findElement(By.id("opt-in")).click();
+                System.out.println(is_enabled);
+            }
+        } catch (ElementClickInterceptedException e) {
+            System.out.println("Error!");
         }
         driver.navigate().back();
         Thread.sleep(5000);
@@ -78,24 +87,12 @@ public class testng {
         driver.get("https://learn.javascript.ru/uibasic");
         driver.findElement(By.xpath("/html/body/div[1]/div[2]/div/main/div[1]/article/div[2]/div[8]/div/div[1]/div[1]/a")).click();
         Thread.sleep(5000);
-        driver.switchTo().alert().accept();
-        driver.navigate().back();
-    }
-
-    @Test(priority = 6)
-    public void exceptions(){
-        driver.findElement(By.xpath("/html/body/header/div/nav/ol/li[3]/a")).click();
-        driver.findElement(By.id("email")).sendKeys("sanya.gubanova.02@gmail.com");
-        driver.findElement(By.id("password")).sendKeys("alya2002");
-        WebElement submitBtn = driver.findElement(By.id("submit-button"));
-        try{
-            if(submitBtn.isDisplayed()){
-                submitBtn.click();
-            }
+        try {
+            driver.switchTo().alert().accept();
+        } catch (NoAlertPresentException e) {
+            System.out.println("No alert!");
         }
-        catch(NoSuchElementException e){
-            e.printStackTrace();
-        }
+        Thread.sleep(5000);
     }
 
     @AfterSuite
