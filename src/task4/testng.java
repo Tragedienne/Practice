@@ -3,8 +3,12 @@ package task4;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.*;
+
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class testng {
@@ -14,7 +18,8 @@ public class testng {
     public void Obj() {
         driver.get("https://stackoverflow.com/");
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        //неявное ожидание
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
     //Проверка актуального заголовка сайта
@@ -47,6 +52,21 @@ public class testng {
         }
         driver.navigate().back();
         Thread.sleep(5000);
+    }
+
+    //Ожидание (явное)
+    @Test(priority = 4)
+    public void waiting() throws InterruptedException {
+        driver.findElement(By.xpath("/html/body/header/div/nav/ol/li[3]/a")).click();
+        driver.findElement(By.id("email")).sendKeys("sanya.gubanova.02@gmail.com");
+        driver.findElement(By.id("password")).sendKeys("alya2002");
+        driver.findElement(By.id("submit-button")).click();
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[3]/div[2]/div[1]/div[1]/div/a")));
+        driver.findElement(By.xpath("/html/body/div[3]/div[2]/div[1]/div[1]/div/a")).click();
+
+        driver.navigate().back();
     }
 
     @AfterSuite
